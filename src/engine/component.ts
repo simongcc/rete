@@ -11,5 +11,11 @@ export abstract class Component {
         this.name = name;
     }
 
+    /**
+     * process data
+     * 
+     * eg. json data
+     * 
+     */
     abstract worker(node: NodeData, inputs: WorkerInputs, outputs: WorkerOutputs, ...args: unknown[]): void;
 }

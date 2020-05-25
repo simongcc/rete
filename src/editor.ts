@@ -11,6 +11,17 @@ import { Validator } from './core/validator';
 import { listenWindow } from './view/utils';
 import { EditorEvents, EventsTypes } from './events';
 
+/**
+ * The editor is an area with nodes and connections between their sockets. The following features are available:
+ * 
+ * Interaction with the workspace (move, scale) and control nodes (move, add, delete)
+ * Display of connections, nodes, their inputs/outputs and controls
+ * Event handling editor
+ * Import/export schema in JSON format
+ * Expansion of functionality with plugins
+ * Customization of the workspace, nodes and connections
+ * 
+ */
 export class NodeEditor extends Context<EventsTypes> {
 
     nodes: Node[] = [];
